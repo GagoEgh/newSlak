@@ -1,0 +1,43 @@
+.form{
+    margin: 100px auto;
+    padding: 50px 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+.form-control input {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+} 
+
+.inputMargin {
+    margin-top: 5px;
+}
+   
+.formErr{
+    height: 20px;
+}
+
+.errors{
+    color: rgb(204, 9, 9);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.display{
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1469d9;
+    font-size: 16px;
+    cursor: pointer;
+}

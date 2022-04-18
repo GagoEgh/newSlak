@@ -1,0 +1,68 @@
+[
+    {
+        "channelName": "angular",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Jun 19, 2015, 9:03",
+                "img": "../../assets/imges/person.png"
+            }
+        ]
+    },
+    {
+        "channelName": "general",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Jun 15, 2015, 9:03",
+                "img": "../../assets/imges/person.png"
+            }
+        ]
+    },
+    {
+        "channelName": "homevork",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Jun 15, 2015, 10:13",
+                "img": "../../assets/imges/person.png"
+            }
+        ]
+    },
+    {
+        "channelName": "questions",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Jun 5, 2015, 8:30",
+                "img": "../../assets/imges/person.png"
+            }
+        ]
+    },
+    {
+        "channelName": "random",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Jun 1, 2015, 19:00",
+                "img": "../../assets/imges/person.png"
+            }
+        ]
+    },
+    {
+        "channelName": "resources",
+        "users": [
+            {
+                "fullName": "John Doe",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date":"Jun 21, 2015, 3:03",
+                "img":"../../assets/imges/person.png"
+            }
+        ]
+    }
+]

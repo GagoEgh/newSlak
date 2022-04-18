@@ -1,0 +1,19 @@
+.list{
+   list-style: none;
+   padding: 0;
+   text-align: center;
+}
+
+.list li{
+    padding: 2px;
+    cursor: pointer;
+}
+
+.list a{
+    text-decoration: none;
+    color: #a49898;
+}
+
+li:hover{
+    background-color:  #2f082f;;
+}

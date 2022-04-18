@@ -1,0 +1,28 @@
+<form class="form" [formGroup] = 'form' (submit)="checkUser()">
+    <div class="form-control">
+        <label >First Name</label>
+        <input class="inputMargin" type="text" formControlName="firstName" />
+        <div class="formErr">
+          <div *ngIf="form.controls['firstName'].invalid && form.controls['firstName'].touched">
+            <span *ngIf="form.controls['firstName'].hasError('required')" class="errors">
+              Required
+            </span>
+          </div>
+        </div>
+    </div>
+    <div class="form-control">
+        <label>Last Name</label>
+        <input class="inputMargin" type="text" formControlName="lastName" />
+        <div class="formErr">
+          <div *ngIf="form.controls['lastName'].invalid && form.controls['lastName'].touched">
+            <span *ngIf="form.controls['lastName'].hasError('required')" class="errors">
+              Required
+            </span>
+          </div>
+          <div *ngIf = '!isUser'>
+            <p class="errors">There is no person by that name</p>
+          </div>
+        </div>
+    </div>
+      <button  class="display" >check</button>
+</form>
