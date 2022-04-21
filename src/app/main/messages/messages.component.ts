@@ -8,7 +8,6 @@ import { DatePipe } from '@angular/common';
 import { AuthService } from 'src/app/auth/auth.service';
 import { User } from 'src/app/auth/user.model';
 import { Message } from 'src/app/auth/messages.model';
-import roomJson from '../../../assets/room.json';
 
 @Component({
   selector: 'app-messages',
@@ -28,8 +27,6 @@ export class MessagesComponent implements OnInit {
   responseId: number = 0;
   member: any;
 
-  myMessage: any[] | undefined = [];
-
   message = new FormControl('', [Validators.required]);
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -42,17 +39,6 @@ export class MessagesComponent implements OnInit {
   ngOnInit(): void {
     this.user = this.authService.getUser();
     this.showText();
-
-    this.getMyMessage()
-  }
-
-  getMyMessage() {
-    this.myMessage = roomJson.filter((item) => {
-      return item.goTo === this.user.id
-    })
-
-   const from = this.myMessage.filter((item)=> item.fromId === this.responseId)
-    console.log(from);
   }
 
   private getLocalChannel(id: number, rout: string) {
@@ -76,6 +62,7 @@ export class MessagesComponent implements OnInit {
           this.member = membersJson.find((item) => item.id === id);
           this.user = JSON.parse(localStorage.getItem(`chat-${id}`)!);
           this.myMsg = this.user?.messages.filter((item: any) => item.goTo === id);
+   
         } catch { }
 
       } else {
@@ -83,7 +70,6 @@ export class MessagesComponent implements OnInit {
         this.member = membersJson.find((item) => item.id === id);
       }
     }
-
   }
 
   showText() {
@@ -122,7 +108,6 @@ export class MessagesComponent implements OnInit {
     if (!this.isChannels && this.message.valid) {
       const userMessage: Message = {
         goTo: this.responseId,
-        fromId: this.user.id,
         date: this.datePipe.transform(date, 'EE, MMMM d')!,
         time: this.datePipe.transform(date, 'h:mm')!,
         messages: this.message.value
