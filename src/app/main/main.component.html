@@ -1,10 +1,20 @@
+<div class="header">
+    <div class="user">
+        <div class="block">
+            <img [src]="user.img" class="img">
+            <h3>{{user?.firstName}} {{user?.lastName}}</h3>
+        </div>
+        <button class="close" (click)="close()">close</button>
+    </div>
+   
+
+</div>
 <div class="component">
     <div class="nav">
         <app-bar></app-bar>
     </div>
-    <div class="messages">
-        <app-messages></app-messages>
+    <div class="router">
+        <router-outlet></router-outlet>
     </div>
-
-    <router-outlet></router-outlet>
+    
 </div>

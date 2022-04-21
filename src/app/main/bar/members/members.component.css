@@ -1,0 +1,28 @@
+.list{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    
+ }
+ 
+ .list li{
+     padding: 2px;
+     cursor: pointer;
+     display: flex;
+     margin-left: 80px;
+ }
+ 
+ .list a{
+     text-decoration: none;
+     color: #a49898;
+     display: block;
+ }
+ 
+ li:hover{
+     background-color:  #2f082f;;
+ }
+
+ .img{
+     width: 30px;
+     margin-right: 10px;
+ }

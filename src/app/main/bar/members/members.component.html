@@ -1,1 +1,11 @@
-<p>members works!</p>
+<div class="members">
+    <ul class="list">
+        <h4>members</h4>
+        <li *ngFor = "let member of members">
+            <img class="img" [src] = "member.img">
+            <a routerLinkActive="active" [routerLink]="['members/',member.id]">
+                {{member.firstName +' '+member.lastName| member:member.id}}
+            </a>
+        </li>
+    </ul>
+</div>

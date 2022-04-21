@@ -11,7 +11,6 @@ export class ChannelsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.channels)
   }
 
 }

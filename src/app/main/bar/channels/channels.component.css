@@ -12,6 +12,7 @@
 .list a{
     text-decoration: none;
     color: #a49898;
+    display: block;
 }
 
 li:hover{

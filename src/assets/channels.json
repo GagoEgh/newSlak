@@ -1,66 +1,92 @@
 [
     {
+        "id":1,
         "channelName": "angular",
         "users": [
             {
+                "id":1,
                 "fullName": "John Doe",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date": "Jun 19, 2015, 9:03",
+                "date": "Monday, June 5",
+                "time":"9:03",
+                "img": "../../assets/imges/person.png"
+            },
+            {
+                "id":3,
+                "fullName": "Diego Garcia",
+                "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                "date": "Monday, June 22",
+                "time":"10:20",
                 "img": "../../assets/imges/person.png"
             }
         ]
     },
     {
+        "id":2,
         "channelName": "general",
         "users": [
             {
+                "id":1,
                 "fullName": "John Doe",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date": "Jun 15, 2015, 9:03",
-                "img": "../../assets/imges/person.png"
+                "date": "Monday, June 10",
+                "img": "../../assets/imges/person.png",
+                "time":"9:43"
             }
         ]
     },
     {
+        "id":3,
         "channelName": "homevork",
         "users": [
             {
+                "id":1,
                 "fullName": "John Doe",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date": "Jun 15, 2015, 10:13",
+                "date": "Monday, June 25",
+                "time":"19:23",
                 "img": "../../assets/imges/person.png"
             }
         ]
     },
     {
+        "id":4,
         "channelName": "questions",
         "users": [
             {
+                "id":1,
                 "fullName": "John Doe",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date": "Jun 5, 2015, 8:30",
+                "date": "Monday, June 14",
+                "time":"8:07",
                 "img": "../../assets/imges/person.png"
             }
         ]
     },
     {
+        "id":5,
         "channelName": "random",
         "users": [
             {
+                "id":1,
                 "fullName": "John Doe",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date": "Jun 1, 2015, 19:00",
+                "date": "Monday, June 11",
+                "time":"13:03",
                 "img": "../../assets/imges/person.png"
             }
         ]
     },
     {
+        "id":6,
         "channelName": "resources",
         "users": [
             {
-                "fullName": "John Doe",
+                "id":2,
+                "fullName": "Paula Sanches",
                 "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                "date":"Jun 21, 2015, 3:03",
+                "date":"Monday, June 26",
+                "time":"23:33",
                 "img":"../../assets/imges/person.png"
             }
         ]

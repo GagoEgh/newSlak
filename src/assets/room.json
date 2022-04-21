@@ -1,0 +1,44 @@
+[
+    {
+        "goTo": 4,
+        "fromId": 1,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 10",
+        "time": "12:03"
+    },
+    {
+        "goTo": 3,
+        "fromId": 2,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 26",
+        "time": "22:22"
+    },
+    {
+        "goTo": 2,
+        "fromId": 3,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 6",
+        "time": "3:13"
+    },
+    {
+        "fromId": 2,
+        "goTo": 4,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 26",
+        "time": "23:03"
+    },
+    {
+        "fromId": 4,
+        "goTo": 5,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 26",
+        "time": "23:33"
+    },
+    {
+        "fromId": 4,
+        "goTo": 2,
+        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "date": "Monday, June 26",
+        "time": "23:33"
+    }
+]

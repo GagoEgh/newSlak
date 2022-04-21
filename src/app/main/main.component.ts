@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
+import { User } from '../auth/user.model';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -7,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
-  date = new Date()
+  user: any; //User = {} as User;
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) { }
+
   ngOnInit(): void {
-    console.log(this.date)
+    this.user = this.authService.getUser();
+  }
+
+  close(){
+    localStorage.removeItem('authToken');
+    this.router.navigate(['/auth']);
   }
 
 }

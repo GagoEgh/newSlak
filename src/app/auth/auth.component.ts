@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import members from '../../assets/members.json'
+import { AuthService } from './auth.service';
+
 
 @Component({
   selector: 'app-auth',
@@ -17,7 +19,8 @@ export class AuthComponent implements OnInit {
 
   constructor(
     private fromBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private authService: AuthService
   ) { }
 
   ngOnInit(): void { }
@@ -28,12 +31,11 @@ export class AuthComponent implements OnInit {
       lastName: this.form.get('lastName')?.value
     }
 
-    const user = members.find((member) => {
-      return member.firstName === userForm.firstName && member.lastName === userForm.lastName
-    })
+    const user = this.authService.getMember(userForm);
 
     if (this.form.valid && user) {
-      localStorage.setItem('authToken', 'example token');
+
+      localStorage.setItem('authToken', `${user.id}`);
       this.router.navigate(['/main']);
     }
 

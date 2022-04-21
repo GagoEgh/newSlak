@@ -6,6 +6,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { MainRoutingModule } from './main-routing.module';
 import { ChannelsComponent } from './bar/channels/channels.component';
 import { MembersComponent } from './bar/members/members.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MemberPipe } from './bar/member.pipe';
 
 
 
@@ -19,10 +21,13 @@ import { MembersComponent } from './bar/members/members.component';
     MessagesComponent,
     ChannelsComponent,
     MembersComponent,
+    MemberPipe,
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }

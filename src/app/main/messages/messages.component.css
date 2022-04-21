@@ -1,0 +1,102 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.title, .member{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 3px;
+  margin-top: 22px;
+}
+
+.title h3{
+  font-size: 18px;
+  line-height: 1.33334;
+  font-weight: 900;
+  padding-left: 15px;
+}
+
+.date p{
+  display: block;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+
+.messageBlock{
+  display: flex;
+}
+
+.messageBlock:hover{
+  background-color: #faf7f7;
+}
+.text{
+  margin-left: 25px;
+}
+
+.text h3{
+  margin-top: 2px;
+}
+
+.time{
+  color: #bdbaba;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.textarea{
+  width: 100%;
+  height: 50px;
+}
+
+.img{
+  width: 20px;
+}
+
+.sendMessage{
+  position: relative;
+}
+
+.send{
+  position: absolute;
+  left: 97%;
+  bottom: 30%;
+  cursor: pointer;
+}
+
+.user, .member{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/* .user{
+  margin-bottom: 400px;
+} */
+
+.user:hover{
+  background-color: #faf7f7;
+}
+
+.user img, .member img{
+  width: 30px;
+  height: 30px;
+
+}
+
+.member img{
+  margin-top: 15px;
+}
+
+.user img{
+  margin-top: 10px;
+}
+.message p,.message h3{
+  padding: 5px;
+  margin: 0;
+}
