@@ -26,7 +26,7 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
   channels: Channel[] = [];
   channel: Channel | undefined = {} as Channel;
 
-  user: any  //User | undefined = {} as User;
+  user: any
 
   myMsg: Message[] = [];
   responseId: number = 0;
@@ -51,12 +51,8 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
   }
 
   scrollToBottom(): void {
-    console.log(this.myScrollContainer);
-    
     if (this.myScrollContainer)
-      try {
-        console.log('yesss');
-        
+      try { 
         this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
       } catch (err) { }
   }
@@ -67,17 +63,8 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
       if (localStorage.getItem('chat')) {
         try {
           this.rooms = JSON.parse(localStorage.getItem(`chat`)!);
-
-          // const myMessages = this.rooms.filter((item: any) =>item.goTo === this.user.id); 
-
-          // this.myMsg = myM
-
           this.member = membersJson.find((member) => member.id === this.responseId);
-
-
           const chat = this.rooms.filter((item) => item.fromId === this.user.id || item.goTo === this.user.id);
-
-
 
           if (this.user.id !== this.responseId) {
             this.myMsg = chat.filter((item) => item.fromId === this.responseId || item.goTo === this.responseId)
@@ -89,7 +76,6 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
               }
             });
             this.scrollToBottom();
-            console.log(this.myMsg)
           }
 
 
