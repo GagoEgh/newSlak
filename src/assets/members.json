@@ -3,74 +3,33 @@
         "id":1,
         "firstName":"John",
         "lastName":"Doe",
-        "img": "../../assets/imges/person.png",
-        "messages":[
-            {
-                "goTo":4,
-                "messages":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "date":"Monday, June 10",
-                "time":"12:03"
-            }
-        ]
+        "img": "../../assets/imges/person.png"
+     
     },
 
     {
         "id":2,
         "firstName":"Paula",
         "lastName":"Sanches",
-        "img": "../../assets/imges/person.png",
-        "messages":[
-            {
-                "goTo":3,
-                "messages":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "date":"Monday, June 26",
-                "time":"22:22"
-            }
-        ]
+        "img": "../../assets/imges/person.png"
+     
     },
     {
         "id":3,
         "firstName":"Diego",
         "lastName":"Garcia",
-        "img": "../../assets/imges/person.png",
-        "messages":[
-            {
-                "goTo":1,
-                "messages":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "date":"Monday, June 6",
-                "time":"3:13"
-            }
-        ]
+        "img": "../../assets/imges/person.png"
     },
     {
         "id":4,
         "firstName":"Mishel",
         "lastName":"Kanales",
-        "img": "../../assets/imges/person.png",
-        "messages":[
-            {
-                "goTo":3,
-                "messages":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "date":"Monday, June 26",
-                "time":"23:03"
-            
-            }
-        ]
+        "img": "../../assets/imges/person.png"
     },
     {
         "id":5,
         "firstName":"Sergi",
         "lastName":"Roberto",
-        "img": "../../assets/imges/person.png",
-        "messages":[
-            {
-                "goTo":4,
-                "messages":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "date":"Monday, June 26",
-                "time":"23:33"
-            }
-        ]
-
-        
+        "img": "../../assets/imges/person.png"   
     }
 ]

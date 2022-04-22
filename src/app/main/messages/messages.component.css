@@ -3,6 +3,8 @@
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .title, .member{
@@ -51,7 +53,7 @@
 }
 
 .textarea{
-  width: 100%;
+  width: 97%;
   height: 50px;
 }
 
@@ -65,7 +67,7 @@
 
 .send{
   position: absolute;
-  left: 97%;
+  right: 20px;
   bottom: 30%;
   cursor: pointer;
 }

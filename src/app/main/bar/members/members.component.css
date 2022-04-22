@@ -9,7 +9,7 @@
      padding: 2px;
      cursor: pointer;
      display: flex;
-     margin-left: 80px;
+     justify-content: center;
  }
  
  .list a{
@@ -26,3 +26,7 @@
      width: 30px;
      margin-right: 10px;
  }
+
+.active{
+     background-color:#2f082f;
+}

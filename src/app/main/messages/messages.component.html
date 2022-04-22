@@ -1,4 +1,4 @@
-<div class="wrap">
+<div #scrollMe  class="wrap">
     <div *ngIf="isChannels; else chat">
         <div class="title">
             <h3 >{{channel?.channelName}}</h3>
@@ -22,20 +22,20 @@
  
     <ng-template #chat>
         
-        <div class="member">
+         <div class="member">
             <img [src]="member?.img">
             <h3 >{{member?.firstName}} {{member?.lastName}}</h3>
         </div> 
-        <div *ngIf = "myMsg.length" >
-            <div *ngFor = "let message of myMsg">
-              <div class="date">
+       <div  *ngIf = "myMsg.length" >
+             <div  *ngFor = "let message of myMsg">
+             <div class="date">
                 <p>{{message?.date}}</p>
               </div>
               <div class="user">
-                <img [src]="user?.img">
-                <div class="message">
+                <img [src]="message?.user?.img">
+                 <div class="message">
                   <h3>
-                    {{user?.firstName}} {{user?.lastName}}
+                    {{message?.user?.firstName}} {{message?.user?.lastName}}
                     <span class="time">{{message?.time}}</span>
                   </h3>
                   <p>{{message?.messages}}</p>
@@ -43,7 +43,7 @@
              </div>
             </div>
         </div>
-     
+      
     </ng-template>
 
     <div class="sendMessage">

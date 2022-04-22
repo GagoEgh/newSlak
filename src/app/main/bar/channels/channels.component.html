@@ -2,7 +2,8 @@
     <ul class="list">
         <h4>channels</h4>
         <li *ngFor = "let channel of channels">
-            <a routerLinkActive="active" [routerLink]="['channels/',channel.id]">
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+             [routerLink]="['channels/',channel.id]">
                 {{channel.channelName}}
             </a>
         </li>
