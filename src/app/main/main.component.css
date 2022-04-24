@@ -4,6 +4,7 @@
     justify-content: end;
     align-items: end;
     height: 80px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
 .user h3{

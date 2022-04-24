@@ -4,28 +4,39 @@
         "fromId": 1,
         "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "date": "Monday, June 10",
-        "time": "12:03"
-    },
-    {
-        "goTo": 3,
-        "fromId": 2,
-        "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "date": "Monday, June 26",
-        "time": "22:22"
+        "time": "12:03",
+        "user":{
+            "id":1,
+            "firstName":"John",
+            "lastName":"Doe",
+            "img": "../../assets/imges/person.png"
+        }
     },
     {
         "goTo": 1,
         "fromId": 3,
         "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "date": "Monday, June 6",
-        "time": "3:13"
+        "time": "3:13",
+        "user":{
+            "id":3,
+            "firstName":"Diego",
+            "lastName":"Garcia",
+            "img": "../../assets/imges/person.png"
+        }
     },
     {
         "fromId": 1,
         "goTo": 2,
         "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "date": "Monday, June 26",
-        "time": "23:03"
+        "time": "23:03",
+        "user":{
+            "id":1,
+            "firstName":"John",
+            "lastName":"Doe",
+            "img": "../../assets/imges/person.png"
+        }
     },
     
     {
@@ -33,13 +44,25 @@
         "goTo": 5,
         "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "date": "Monday, June 26",
-        "time": "23:33"
+        "time": "23:33",
+        "user":{
+            "id":4,
+            "firstName":"Mishel",
+            "lastName":"Kanales",
+            "img": "../../assets/imges/person.png"
+        }
     },
     {
         "fromId": 4,
         "goTo": 2,
         "messages": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "date": "Monday, June 26",
-        "time": "23:33"
+        "time": "23:33",
+        "user": {
+            "id":4,
+            "firstName":"Mishel",
+            "lastName":"Kanales",
+            "img": "../../assets/imges/person.png"
+        }
     }
 ]

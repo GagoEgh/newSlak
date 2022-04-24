@@ -3,13 +3,12 @@ import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import channelsJson from '../../../assets/channels.json';
 import membersJson from '../../../assets/members.json';
-import { Channel, ChannelUserModel } from './channel.model';
+import { Channel, ChannelUserModel } from '../../models/channel.model';
 import { DatePipe } from '@angular/common';
 import { AuthService } from 'src/app/auth/auth.service';
-import { User } from 'src/app/auth/user.model';
-import { Message } from 'src/app/auth/messages.model';
+import { Message } from 'src/app/models/messages.model';
 import roomJson from '../../../assets/room.json'
-import { MemeberModel } from 'src/app/auth/member.model';
+import { MemeberModel } from 'src/app/models/member.model';
 
 
 @Component({
@@ -25,14 +24,13 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
   isChannels = false;
   channels: Channel[] = [];
   channel: Channel | undefined = {} as Channel;
-
-  user: any
-
+  user: MemeberModel = {} as MemeberModel;
   myMsg: Message[] = [];
-  responseId: number = 0;
-  member: any;
+  rooms: Message[] = roomJson;
 
-  rooms: any[] = roomJson;
+  responseId: number = 0;
+  member: MemeberModel = {} as MemeberModel;
+
   message = new FormControl('', [Validators.required]);
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -43,27 +41,27 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit(): void {
-    this.user = this.authService.getUser();
+    this.user = this.authService.getUser()!;
     this.showText();
   }
+
   ngAfterViewChecked() {
     this.scrollToBottom();
   }
 
   scrollToBottom(): void {
     if (this.myScrollContainer)
-      try { 
+      try {
         this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
       } catch (err) { }
   }
   getMyMessages(rout: string) {
     if (rout === 'members') {
-
       this.isChannels = false;
       if (localStorage.getItem('chat')) {
         try {
           this.rooms = JSON.parse(localStorage.getItem(`chat`)!);
-          this.member = membersJson.find((member) => member.id === this.responseId);
+          this.member = membersJson.find((member) => member.id === this.responseId)!;
           const chat = this.rooms.filter((item) => item.fromId === this.user.id || item.goTo === this.user.id);
 
           if (this.user.id !== this.responseId) {
@@ -77,7 +75,6 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
             });
             this.scrollToBottom();
           }
-
 
         } catch {
 
@@ -143,7 +140,8 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
         messages: this.message.value
       }
       const member = membersJson.find((member: MemeberModel) => member.id === userMessage.fromId);
-      userMessage = Object.assign({}, userMessage, { user: member })
+      userMessage = Object.assign({}, userMessage, { user: member });
+
       this.message.reset();
       this.myMsg.push(userMessage);
       this.rooms.push(userMessage);

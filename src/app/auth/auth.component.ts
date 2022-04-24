@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import members from '../../assets/members.json'
+import roomsJson from '../../assets/room.json'
 import { AuthService } from './auth.service';
 
 
@@ -35,6 +35,9 @@ export class AuthComponent implements OnInit {
 
     if (this.form.valid && user) {
 
+      if (!localStorage.getItem('chat')) {
+        localStorage.setItem('chat', JSON.stringify(roomsJson)!);
+      }
       localStorage.setItem('authToken', `${user.id}`);
       this.router.navigate(['/main']);
     }

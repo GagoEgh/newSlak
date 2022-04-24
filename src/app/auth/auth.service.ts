@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import membersJson from '../../assets/members.json'
-import { User } from './user.model';
+import { User } from '../models/user.model';
 @Injectable({
   providedIn: 'root'
 })
